@@ -49,7 +49,7 @@ setup(
     description="""<PYPI_NAME>: <SHORT_DESCRIPTION>""",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author='The Ethereum Foundation',
+    author='The <PROJECT_NAME> contributors',
     author_email='snakecharmers@ethereum.org',
     url='https://github.com/ethereum/<REPO_NAME>',
     include_package_data=True,

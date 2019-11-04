@@ -54,7 +54,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = '<PROJECT_NAME>'
-copyright = '2019, The Ethereum Foundation'
+copyright = '2019, The <PROJECT_NAME> contributors'
 
 __version__ = setup_version
 # The version info for the project you're documenting, acts as replacement for
@@ -210,7 +210,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', '<MODULE_NAME>.tex', '<PROJECT_NAME> Documentation',
-   'The Ethereum Foundation', 'manual'),
+   'The <PROJECT_NAME> contributors', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -240,7 +240,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', '<MODULE_NAME>', '<PROJECT_NAME> Documentation',
-     ['The Ethereum Foundation'], 1)
+     ['The <PROJECT_NAME> contributors'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -254,7 +254,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', '<PROJECT_NAME>', '<PROJECT_NAME> Documentation',
-   'The Ethereum Foundation', '<PROJECT_NAME>', '<SHORT_DESCRIPTION>',
+   'The <PROJECT_NAME> contributors', '<PROJECT_NAME>', '<SHORT_DESCRIPTION>',
    'Miscellaneous'),
 ]
 
