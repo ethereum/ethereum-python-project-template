@@ -85,8 +85,8 @@ logs
 .idea/**/libraries
 
 
-## Uncomment if using auto-import.
-# .idea/*.iml
+#Comment out if not using auto-import.
+.idea/*.iml
 
 ## PyCharm Patch
 # Comment Reason : https://github.com/toptal/gitignore.io/issues/215
