@@ -43,6 +43,6 @@ name = "Miscellaneous changes"
 showcontent = false
 
 [[tool.towncrier.type]]
-directory = "breaking-change"
+directory = "breaking"
 name = "Breaking changes"
 showcontent = true
