@@ -8,6 +8,7 @@ import pathlib
 import sys
 
 ALLOWED_EXTENSIONS = {
+    '.breaking-change.rst',
     '.bugfix.rst',
     '.doc.rst',
     '.feature.rst',
