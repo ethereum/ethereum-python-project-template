@@ -48,12 +48,16 @@ build-docs:
 
 validate-docs:
 	python ./newsfragments/validate_files.py
-	towncrier --draft --version preview
+	towncrier build --draft --version preview
 
 docs: build-docs validate-docs
+
+check-docs: build-docs validate-docs
+
+docs: check-docs
 	open docs/_build/html/index.html
 
-linux-docs: build-docs
+linux-docs: check-docs
 	xdg-open docs/_build/html/index.html
 
 check-bump:
@@ -67,7 +71,7 @@ notes: check-bump
 	# Now generate the release notes to have them included in the release commit
 	towncrier build --yes --version $(UPCOMING_VERSION)
 	# Before we bump the version, make sure that the towncrier-generated docs will build
-	make build-docs
+	make check-docs
 	git commit -m "Compile release notes"
 
 release: check-bump clean
@@ -75,7 +79,7 @@ release: check-bump clean
 	git status -s -b | head -1 | grep "\.\.upstream/master"
 	# verify that docs build correctly
 	./newsfragments/validate_files.py is-empty
-	make build-docs
+	make check-docs
 	CURRENT_SIGN_SETTING=$(git config commit.gpgSign)
 	git config commit.gpgSign true
 	bumpversion $(bump)
