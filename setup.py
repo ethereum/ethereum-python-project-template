@@ -58,7 +58,7 @@ setup(
     install_requires=[
         "eth-utils>=2,<3",
     ],
-    python_requires=">=3.6, <4",
+    python_requires=">=3.7, <4",
     extras_require=extras_require,
     py_modules=["<MODULE_NAME>"],
     license="MIT",
@@ -74,7 +74,6 @@ setup(
         "Operating System :: MacOS",
         "Operating System :: POSIX",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",

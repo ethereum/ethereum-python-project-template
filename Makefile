@@ -32,6 +32,7 @@ lint:
 
 lint-roll:
 	isort --recursive <MODULE_NAME> tests
+	black {toxinidir}/<MODULE_NAME> {toxinidir}/tests setup.py
 	$(MAKE) lint
 
 test:
@@ -49,8 +50,6 @@ build-docs:
 validate-docs:
 	python ./newsfragments/validate_files.py
 	towncrier build --draft --version preview
-
-docs: build-docs validate-docs
 
 check-docs: build-docs validate-docs
 
@@ -71,7 +70,7 @@ notes: check-bump
 	# Now generate the release notes to have them included in the release commit
 	towncrier build --yes --version $(UPCOMING_VERSION)
 	# Before we bump the version, make sure that the towncrier-generated docs will build
-	make check-docs
+	make build-docs
 	git commit -m "Compile release notes"
 
 release: check-bump clean
@@ -79,7 +78,7 @@ release: check-bump clean
 	git status -s -b | head -1 | grep "\.\.upstream/master"
 	# verify that docs build correctly
 	./newsfragments/validate_files.py is-empty
-	make check-docs
+	make build-docs
 	CURRENT_SIGN_SETTING=$(git config commit.gpgSign)
 	git config commit.gpgSign true
 	bumpversion $(bump)
