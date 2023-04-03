@@ -7,14 +7,14 @@ from setuptools import (
 
 extras_require = {
     "test": [
-        "pytest>=6.2.5",
-        "pytest-xdist>=2.4.0,<3",
-        "tox==3.14.6",
+        "pytest>=7.0.0",
+        "pytest-xdist>=2.4.0",
+        "tox>=3.18.0",
     ],
     "lint": [
-        "flake8==3.7.9",
+        "flake8==3.8.2",
         "isort>=5.10.1",
-        "mypy==0.770",
+        "mypy==0.971",
         "pydocstyle>=5.0.0",
         "black>=22",
     ],
