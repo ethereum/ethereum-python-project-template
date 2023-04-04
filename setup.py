@@ -9,7 +9,6 @@ extras_require = {
     "test": [
         "pytest>=7.0.0",
         "pytest-xdist>=2.4.0",
-        "tox>=3.18.0",
     ],
     "lint": [
         "flake8==3.8.2",
@@ -26,6 +25,7 @@ extras_require = {
     "dev": [
         "bumpversion>=0.5.3",
         "pytest-watch>=4.1.0",
+        "tox>=3.18.0",
         "wheel",
         "twine",
         "ipython",
