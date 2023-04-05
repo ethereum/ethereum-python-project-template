@@ -9,8 +9,6 @@ Related to issue #
 [//]: # (Stay ahead of things, add list items here!)
 - [ ] Clean up commit history
 
-- [ ] Update any affected documentation
-
 [//]: # (See: https://<RTD_NAME>.readthedocs.io/en/latest/contributing.html#pull-requests)
 - [ ] Add entry to the [release notes](https://github.com/ethereum/<REPO_NAME>/blob/master/newsfragments/README.md)
 
