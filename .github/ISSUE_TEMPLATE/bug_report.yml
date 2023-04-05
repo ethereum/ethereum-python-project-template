@@ -68,11 +68,3 @@ body:
       label: Output from pip-freeze
       description: Run `pip-freeze` and paste the output below
       render: shell
-  - type: textarea
-    id: cute-animal
-    attributes:
-      label: Cute animal photo
-      description: Paste a picture of a cute animal in the box below
-      value: "![Put a link to a cute animal picture inside the parenthesis-->]()"
-    validations:
-      required: false
