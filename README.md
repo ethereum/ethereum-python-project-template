@@ -36,7 +36,7 @@ git clone git@github.com:ethereum/<REPO_NAME>.git
 cd <REPO_NAME>
 virtualenv -p python3 venv
 . venv/bin/activate
-pip install -e .[dev]
+pip install -e ".[dev]"
 ```
 
 ### Release setup
