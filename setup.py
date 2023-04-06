@@ -11,7 +11,8 @@ extras_require = {
         "pytest-xdist>=2.4.0",
     ],
     "lint": [
-        "flake8==3.8.2",
+        "flake8>=5.0.0",
+        "flake8-bugbear>=22.0.0",
         "isort>=5.10.1",
         "mypy==0.971",
         "pydocstyle>=5.0.0",
