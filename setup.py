@@ -26,7 +26,7 @@ extras_require = {
     "dev": [
         "bumpversion>=0.5.3",
         "pytest-watch>=4.1.0",
-        "tox>=3.18.0",
+        "tox>=4.0.0",
         "wheel",
         "twine",
         "ipython",
