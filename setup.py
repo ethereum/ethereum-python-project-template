@@ -15,7 +15,7 @@ extras_require = {
         "flake8-bugbear==23.3.23",
         "isort>=5.10.1",
         "mypy==0.971",
-        "pydocstyle>=5.0.0",
+        "pydocstyle>=6.0.0",
         "black>=22",
     ],
     "doc": [
