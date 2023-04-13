@@ -1,7 +1,7 @@
 ### What was wrong?
 
 Related to Issue #
-Closes Issue #
+Closes #
 
 ### How was it fixed?
 

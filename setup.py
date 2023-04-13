@@ -27,6 +27,7 @@ extras_require = {
         "bumpversion>=0.5.3",
         "pytest-watch>=4.1.0",
         "tox>=4.0.0",
+        "build>=0.9.0",
         "wheel",
         "twine",
         "ipython",
@@ -59,7 +60,7 @@ setup(
     install_requires=[
         "eth-utils>=2",
     ],
-    python_requires=">=3.7, <4",
+    python_requires=">=3.7.2, <4",
     extras_require=extras_require,
     py_modules=["<MODULE_NAME>"],
     license="MIT",
