@@ -16,7 +16,7 @@ extras_require = {
         "isort>=5.10.1",
         "mypy==0.971",  # mypy does not follow semver, leave it pinned.
         "pydocstyle>=6.0.0",
-        "black>=22",
+        "black>=23",
     ],
     "doc": [
         "sphinx>=5.0.0",

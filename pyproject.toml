@@ -4,7 +4,7 @@ package = "<MODULE_NAME>"
 filename = "docs/release_notes.rst"
 directory = "newsfragments"
 underlines = ["-", "~", "^"]
-title_format = "<PROJECT_NAME> v{version} ({project_date})"
+title_format = "<REPO_NAME> v{version} ({project_date})"
 issue_format = "`#{issue} <https://github.com/ethereum/<REPO_NAME>/issues/{issue}>`__"
 
 [[tool.towncrier.type]]
@@ -34,7 +34,7 @@ showcontent = true
 
 [[tool.towncrier.type]]
 directory = "internal"
-name = "Internal Changes - for <PROJECT_NAME> Contributors"
+name = "Internal Changes - for <REPO_NAME> Contributors"
 showcontent = true
 
 [[tool.towncrier.type]]
