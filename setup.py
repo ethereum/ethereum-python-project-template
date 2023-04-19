@@ -60,7 +60,7 @@ setup(
     install_requires=[
         "eth-utils>=2",
     ],
-    python_requires=">=3.7.2, <4",
+    python_requires=">=3.7, <4",
     extras_require=extras_require,
     py_modules=["<MODULE_NAME>"],
     license="MIT",

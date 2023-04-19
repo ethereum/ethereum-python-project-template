@@ -9,7 +9,7 @@ issue_format = "`#{issue} <https://github.com/ethereum/<REPO_NAME>/issues/{issue
 
 [[tool.towncrier.type]]
 directory = "breaking"
-name = "Breaking changes"
+name = "Breaking Changes"
 showcontent = true
 
 [[tool.towncrier.type]]
@@ -39,12 +39,12 @@ showcontent = true
 
 [[tool.towncrier.type]]
 directory = "misc"
-name = "Miscellaneous changes"
+name = "Miscellaneous Changes"
 showcontent = false
 
 [[tool.towncrier.type]]
 directory = "performance"
-name = "Performance improvements"
+name = "Performance Improvements"
 showcontent = true
 
 [[tool.towncrier.type]]
