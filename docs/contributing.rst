@@ -1,7 +1,11 @@
 Contributing
 ------------
 
-Thank you for your interest in contributing! We welcome all contributions no matter their size. Please read along to learn how to get started.
+Thank you for your interest in contributing! We welcome all contributions no matter their size.
+
+This document covers contributing to ``<REPO_NAME>`` at a high level. For more information on how we do testing, pull requests, documentation, and more, please checkout the `Snake Charmers Tactical Manual <https://github.com/ethereum/snake-charmers-tactical-manual>`_.
+
+Please read along to learn how to get started.
 
 
 Setting the stage
@@ -17,7 +21,7 @@ First, we need to clone the <PROJECT_NAME> repository:
 .. include:: /fragments/virtualenv_explainer.rst
 
 After we have activated our virtual environment, we need to install all dependencies that are needed to run, develop, and test.
-This is as easy as navigating to the <REPO_NAME> directory and running:
+This is as easy as navigating to the ``<REPO_NAME>`` directory and running:
 
 .. code:: sh
 
@@ -42,17 +46,17 @@ However, you may just want to run a subset instead, like:
     pytest tests/path/to/file/test_stuff.py
 
 
-We can also install ``tox`` to run the full test suite which also covers things like testing the code against different Python versions, linting etc.
-
-It is important to understand that each Pull Request must pass the full test suite as part of the CI check, hence it is often convenient to have ``tox`` installed locally as well.
-
-
 Code Style
 ~~~~~~~~~~
 
 When multiple people are working on the same body of code, it is important that they write code that conforms to a similar style. It often doesn't matter as much which style, but rather that they conform to one style.
 
-To ensure your contribution conforms to the style being used in this project, we encourage you to read our `style guide <https://github.com/ethereum/snake-charmers-tactical-manual>`_.
+We use ``black``, ``flake8``, and ``isort`` to enforce consistent style.
+You can verify that your contribution conforms by running:
+
+.. code:: sh
+
+    make lint
 
 
 Type Hints
@@ -62,7 +66,7 @@ This codebase uses `type hints <https://www.python.org/dev/peps/pep-0484/>`_. Ty
 
 All new code is required to land with type hints, with the exception of test code that is not expected to use type hints.
 
-All parameters, as well as the return type of defs, are expected to be typed, with the exception of ``self`` and ``cls`` as seen in the following example.
+All parameters, as well as the return type of functions, are expected to be typed, with the exception of ``self`` and ``cls`` as seen in the following example.
 
 .. code:: python
 
@@ -81,7 +85,7 @@ on `how to create documentation for the Python Ethereum ecosystem <https://githu
 Pull Requests
 ~~~~~~~~~~~~~
 
-It's a good idea to make pull requests early on.  A pull request represents the
+It's a good idea to make pull requests early on. A pull request represents the
 start of a discussion, and doesn't necessarily need to be the final, finished
 submission.
 

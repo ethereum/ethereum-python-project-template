@@ -18,10 +18,10 @@ python -m pip install <PYPI_NAME>
 
 ## Documentation
 
-Read more in the [documentation on ReadTheDocs](https://<RTD_NAME>.readthedocs.io/).
+For a detailed explanation of this library's features and functionality, please refer to the [official documentation](https://<RTD_NAME>.readthedocs.io/) hosted on Read the Docs.
 
-[View the change log](https://<RTD_NAME>.readthedocs.io/en/latest/release_notes.html).
+To stay informed about updates and modifications to the library, you can also review the [changelog](https://<RTD_NAME>.readthedocs.io/en/latest/release_notes.html).
 
 ## Contributing
 
-Want to help out? Check out our [contribution guidelines](https://web3py.readthedocs.io/en/latest/contributing.html).
+Want to help out? Check out our [contribution guidelines](https://<RTD_NAME>.readthedocs.io/en/latest/contributing.html).
