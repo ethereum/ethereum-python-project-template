@@ -21,7 +21,7 @@ This is as easy as navigating to the <REPO_NAME> directory and running:
 
 .. code:: sh
 
-    pip install -e ".[dev]"
+    python -m pip install -e ".[dev]"
 
 
 Running the tests
@@ -39,7 +39,7 @@ However, you may just want to run a subset instead, like:
 
 .. code:: sh
 
-    pytest tests/core/padding-utils/test_padding.py
+    pytest tests/path/to/file/test_stuff.py
 
 
 We can also install ``tox`` to run the full test suite which also covers things like testing the code against different Python versions, linting etc.
@@ -52,7 +52,7 @@ Code Style
 
 When multiple people are working on the same body of code, it is important that they write code that conforms to a similar style. It often doesn't matter as much which style, but rather that they conform to one style.
 
-To ensure your contribution conforms to the style being used in this project, we encourage you to read our `style guide <https://github.com/pipermerriam/ethereum-dev-tactical-manual/blob/main/style-guide.md>`_.
+To ensure your contribution conforms to the style being used in this project, we encourage you to read our `style guide <https://github.com/ethereum/snake-charmers-tactical-manual>`_.
 
 
 Type Hints
@@ -150,12 +150,12 @@ The version format for this repo is ``{major}.{minor}.{patch}`` for
 stable, and ``{major}.{minor}.{patch}-{stage}.{devnum}`` for unstable
 (``stage`` can be alpha or beta).
 
-During a release, specify which part to bump, like
-``make release bump=minor`` or ``make release bump=devnum``.
+To issue the next version in line, specify which part to bump,
+like ``make release bump=minor`` or ``make release bump=devnum``. This is typically done from the
+main branch, except when releasing a beta (in which case the beta is released from main,
+and the previous stable branch is released from said branch).
 
-If you are in a beta version, ``make release bump=stage`` will switch to a
-stable.
+If you are in a beta version, ``make release bump=stage`` will switch to a stable.
 
-To issue an unstable version when the current version is stable, specify
-the new version explicitly, like
-``make release bump="--new-version 4.0.0-alpha.1 devnum"``
+To issue an unstable version when the current version is stable, specify the
+new version explicitly, like ``make release bump="--new-version 4.0.0-alpha.1 devnum"``
