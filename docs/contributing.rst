@@ -52,23 +52,8 @@ Code Style
 
 When multiple people are working on the same body of code, it is important that they write code that conforms to a similar style. It often doesn't matter as much which style, but rather that they conform to one style.
 
-To ensure your contribution conforms to the style being used in this project, we encourage you to read our `style guide <https://github.com/pipermerriam/ethereum-dev-tactical-manual/blob/main/style-guide.md>`_.
+To ensure your contribution conforms to the style being used in this project, we encourage you to read our `style guide <https://github.com/ethereum/snake-charmers-tactical-manual/blob/master/style-guide.md>`_.
 
-
-Type Hints
-~~~~~~~~~~
-
-This codebase uses `type hints <https://www.python.org/dev/peps/pep-0484/>`_. Type hints make it easy to prevent certain types of bugs, enable richer tooling, and enhance the documentation, making the code easier to follow.
-
-All new code is required to land with type hints, with the exception of test code that is not expected to use type hints.
-
-All parameters, as well as the return type of defs, are expected to be typed, with the exception of ``self`` and ``cls`` as seen in the following example.
-
-.. code:: python
-
-    def __init__(self, wrapped_db: DatabaseAPI) -> None:
-        self.wrapped_db = wrapped_db
-        self.reset()
 
 
 Documentation
@@ -103,40 +88,43 @@ Releasing
 ~~~~~~~~~
 
 
-Final test before each release
+Verify The Latest Documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before releasing a new version, build and test the package that will be released:
+Preview the documentation that will get published:
 
 .. code:: sh
 
-    git checkout main && git pull
-
-    make package
+    $ make docs
 
 
-    # Preview the upcoming release notes
-    towncrier --draft
-
-
-Build the release notes
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Before bumping the version number, build the release notes.
-You must include the part of the version to bump (see below),
-which changes how the version number will show in the release notes.
+Preview The Release Notes
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: sh
 
-    make notes bump=$$VERSION_PART_TO_BUMP$$
-
-If there are any errors, be sure to re-run ``make notes`` until it works.
+   $ towncrier build --draft
 
 
-Push the release to github & pypi
+Compile The Release Notes
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After confirming that the release package looks okay, compile the release notes:
+
+.. code:: sh
+
+    $ make notes bump=$$VERSION_PART_TO_BUMP$$
+
+
+You may need to fix up any broken release note fragments before committing. Keep
+running ``make build-docs`` until it passes, then commit and carry on.
+
+   
+Push the release to GitHub & PyPi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After confirming that the release package looks okay, release a new version:
+After committing the compiled release notes and pushing them to the main
+branch, release a new version:
 
 .. code:: sh
 
