@@ -1,14 +1,14 @@
-# <PROJECT_NAME>
+# \<PROJECT_NAME>
 
 [![Join the conversation on Discord](https://img.shields.io/discord/809793915578089484?color=blue&label=chat&logo=discord&logoColor=white)](https://discord.gg/GHryRvPB84)
-[![Build Status](https://circleci.com/gh/ethereum/<REPO_NAME>.svg?style=shield)](https://circleci.com/gh/ethereum/<REPO_NAME>)
-[![PyPI version](https://badge.fury.io/py/<PYPI_NAME>.svg)](https://badge.fury.io/py/<PYPI_NAME>)
-[![Python versions](https://img.shields.io/pypi/pyversions/<PYPI_NAME>.svg)](https://pypi.python.org/pypi/<PYPI_NAME>)
-[![Docs build](https://readthedocs.org/projects/<RTD_NAME>/badge/?version=latest)](https://<RTD_NAME>.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://circleci.com/gh/ethereum/%3CREPO_NAME%3E.svg?style=shield)](https://circleci.com/gh/ethereum/%3CREPO_NAME%3E)
+[![PyPI version](https://badge.fury.io/py/%3CPYPI_NAME%3E.svg)](https://badge.fury.io/py/%3CPYPI_NAME%3E)
+[![Python versions](https://img.shields.io/pypi/pyversions/%3CPYPI_NAME%3E.svg)](https://pypi.python.org/pypi/%3CPYPI_NAME%3E)
+[![Docs build](https://readthedocs.org/projects/%3CRTD_NAME%3E/badge/?version=latest)](https://%3CRTD_NAME%3E.readthedocs.io/en/latest/?badge=latest)
 
-<SHORT_DESCRIPTION>
+\<SHORT_DESCRIPTION>
 
-Read more in the [documentation on ReadTheDocs](https://<RTD_NAME>.readthedocs.io/). [View the change log](https://<RTD_NAME>.readthedocs.io/en/latest/release_notes.html).
+Read more in the [documentation on ReadTheDocs](https://%3CRTD_NAME%3E.readthedocs.io/). [View the change log](https://%3CRTD_NAME%3E.readthedocs.io/en/latest/release_notes.html).
 
 ## Quickstart
 
@@ -18,7 +18,7 @@ python -m pip install <PYPI_NAME>
 
 ## Developer Setup
 
-If you would like to hack on <REPO_NAME>, please check out the [Snake Charmers
+If you would like to hack on \<REPO_NAME>, please check out the [Snake Charmers
 Tactical Manual](https://github.com/ethereum/snake-charmers-tactical-manual)
 for information on how we do:
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import (
-    setup,
     find_packages,
+    setup,
 )
 
 extras_require = {
@@ -28,9 +28,7 @@ extras_require = {
 }
 
 extras_require["dev"] = (
-    extras_require["dev"]
-    + extras_require["docs"]
-    + extras_require["test"]
+    extras_require["dev"] + extras_require["docs"] + extras_require["test"]
 )
 
 
